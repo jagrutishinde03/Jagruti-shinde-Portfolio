@@ -1,14 +1,10 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
-import cryptoCrowdImg from "@/public/cryptocrowd2.png";
-import ozdevsImg from "@/public/ozdevs-two.png";
-import assetTradingImg from "@/public/asset-trading.jpg";
-import euphorusImg from "@/public/euphorus-two.png";
-import euphorusBackendImg from "@/public/euphorus-backend.png";
-import techprowlImg from "@/public/techprowl-two.png";
-import taskManagerImg from "@/public/task-manager.png";
-import familyTreeImg from "@/public/bfsproject.jpg";
-import binaryGameImg from "@/public//binary-game.png";
+import MachineL from "@/public/MachineL.jpg";
+import profile from "@/public/profile.jpg";
+import user from "@/public/user.jpg";
+import deploy from "@/public/deploy.jpg";
+import { FaGraduationCap } from "react-icons/fa6";
 
 export const links = [
   {
@@ -16,196 +12,102 @@ export const links = [
     hash: "#home",
   },
   {
-    name: "Projects",
-    hash: "#projects",
+    name: "Education",
+    hash: "#education",
   },
   {
     name: "Skills",
     hash: "#skills",
   },
   {
+    name: "Projects",
+    hash: "#projects",
+  },
+  {
+    name:"Certifications",
+    hash:"#certifications",
+  },
+  {
     name: "Experience",
     hash: "#experience",
   },
-  {
-    name: "Education",
-    hash: "#education",
-  },
+  
   {
     name: "Contact",
     hash: "#contact",
   },
+  
 ] as const;
 
 export const experiencesData = [
   {
-    title: "Software Engineer",
-    location: "Humanforce",
+    title: "Software Developer Intern",
+    location: "Dassault Systèmes",
     description:
-      "Software engineer in the intelliHR platform team. We are a feature enablement team dedicated to developing features for developers, ensuring they are easier to create. We also look after issues of scale and technical debt for developers and the platform.",
+    "Dassault Systèmes is a global leader in 3D design and engineering software. As an intern in the ENOVIA brand, I worked on web-based application development and explored core platform technologies. This role enhanced my technical skills, exposed me to real-world development practices, and deepened my understanding of scalable enterprise applications.",
     icon: React.createElement(CgWorkAlt),
     date: "January 2024 - Present",
   },
   {
-    title: "Software Engineer",
-    location: "The University of Queensland",
+    title: "React Web Developer Intern",
+    location: "CompTech IT Solutions",
     description:
-      "Full-stack software engineer in the Application Development and Support team. Worked on web applications such as CAHP (Casual Academic Hire and Payment), UQ Maps, UQ Donations, and Programs and Courses.",
+    "At CompTech IT Solutions, I worked as a React Web Developer on the project ServiceDesk Pro: A HelpDesk System for CompTech IT Clients. My role involved designing a responsive user interface using HTML, CSS, Bootstrap, and ReactJS, integrating backend APIs, and implementing real-time updates for efficient query handling.",
     icon: React.createElement(CgWorkAlt),
-    date: "November 2022 - January 2024",
-  },
-  {
-    title: "Developer",
-    location: "YouPay",
-    description:
-      "Developed new features using Laravel, Vue.js, PHP, JavaScript, Tailwind CSS, MySQL and REST APIs. Created an email notification system for mechants to receive weekly/monthly summaries of YouPay carts created, paid and cancelled. I also integrated YouPay into dozens of stores.",
-    icon: React.createElement(CgWorkAlt),
-    date: "February 2022 - November 2022",
-  },
-  {
-    title: "Web Developer",
-    location: "M3 Digital - Contract",
-    description:
-      "Front-end development for a variety of Shopify stores such as FitazFK, Rider Collective, Masseuse Massage, Francesca Jewellery and Salty Captain. Developed high quality landing pages and front end features using HTML, CSS, SCSS, JavaScript and Liquid.",
-    icon: React.createElement(CgWorkAlt),
-    date: "September 2021 - February 2022",
+    date: "June 2024 - August 2024",
   },
 ] as const;
 
+
+
 export const projectsData = [
   {
-    title: "CryptoCrowd",
+    title: "AWS CICD Deployment for PHP project",
     description:
-      "Cryptocurrency sentiment analysis website based on Twitter posts. Users can see the overall sentiment (positive, negative or neutral) of different Cryptocurrencies based on what people are currently posting on Twitter. Users can also see keywords and an average sentiment score. Stateless application that uses Elasticache and S3 on AWS. It also used EC2 and auto-scaling to manage demand.",
-    tags: ["JavaScript", "React", "Express.js", "AWS"],
+    "This project is a PHP-based eCommerce website deployed through a robust CI/CD pipeline on AWS. It uses AWS CodeCommit for version control, CodeBuild for automated builds, and CodeDeploy for seamless deployment to EC2. The backend is powered by Amazon RDS with MySQL, ensuring secure and scalable data management. The setup enables rapid, automated deployments with minimal manual effort.",
+    tags: ["AWS","JavaScript", "React","bootstrap"],
     icons: [
       "logos:aws",
       "logos:javascript",
-      "logos:react",
       "logos:bootstrap",
-      "logos:express",
-    ],
-    imageUrl: cryptoCrowdImg,
-    githubLink: "https://github.com/ben04rogers/cab432-assignment-2",
-    demoLink: "https://www.youtube.com/watch?v=uhyC0M4WIl4",
-  },
-  {
-    title: "OzDevs",
-    description:
-      "Reverse Job board for companies looking to hire developers in Australia. Filter by experience, location and keyboards.  Companies can pay a monthly fee to be able to message developers on the site and view their information.",
-    tags: ["PHP", "Laravel", "JavaScript", "Tailwind", "MySQL"],
-    icons: [
-      "logos:laravel",
       "logos:php",
-      "logos:javascript",
-      "devicon:tailwindcss",
-      "logos:mysql",
     ],
-    imageUrl: ozdevsImg,
-    urlLink: "https://clownfish-app-48u2r.ondigitalocean.app/",
-    githubLink: "https://github.com/ben04rogers/ozdevs-v2",
+    imageUrl: deploy,
+    githubLink: "https://github.com/jagrutishinde03/AWS-CICD-Deployment-for-PHP-project",
   },
   {
-    title: "Company Asset Trading",
+    title: "Analysis of several Supervised Machine Learning Algorithms on Housing Dataset",
     description:
-      "Client-server system written in Java for trading of virtual assets within departments of a company. Facilitated trades via a marketplace model where users can buy and sell assets. Admins of an organisation can create assets, users and modify details. Uses MariaDB as a database and Swing for the GUI.",
-    tags: ["Java", "MariaDB", "Swing"],
-    icons: ["logos:java", "logos:mariadb-icon"],
-    imageUrl: assetTradingImg,
-    githubLink: "https://github.com/ben04rogers/organisation-asset-trading",
-  },
-  // {
-  //   title: "Euphorus",
-  //   description:
-  //     "React application for viewing country happiness data collected from the World Happiness Report initiative. Users can filter by year, country and search limit. AG Grid and Chart.js were used to present the data.",
-  //   tags: ["JavaScript", "React", "Bootstrap"],
-  //   icons: ["logos:javascript", "logos:react", "logos:bootstrap"],
-  //   imageUrl: euphorusImg,
-  //   githubLink: "https://github.com/ben04rogers/cab230assignment1",
-  // },
-  // {
-  //   title: "Country Happiness API",
-  //   description:
-  //     "Developed and deployed an Express API to support the front-end of the Euphorus Happiness Data web application. Routes support query parameters and authorization using JWT. Includes endpoints for countries, rankings, factors, registration, login, and profile. Tested software extensively with Jest and created Swagger documentation for the API as well.      ",
-  //   tags: ["JavaScript", "Node.js", "Express.js", "Swagger", "MySQL"],
-  //   icons: ["logos:javascript", "logos:express", "logos:swagger", "cib:mysql"],
-  //   imageUrl: euphorusBackendImg,
-  //   githubLink: "https://github.com/ben04rogers/cab230assignment2",
-  // },
-  {
-    title: "Techprowl Computer Auction",
-    description:
-      "Computer auction application built with Flask. The site allows users to register, bid on items, leave reviews, post new listings, manage listings, search by keyword, and keep a watch list. ",
-    tags: ["Python", "Flask", "Bootstrap", "SQLite"],
-    icons: ["logos:python", "logos:bootstrap", "logos:sqlite"],
-    imageUrl: techprowlImg,
-    githubLink: "https://github.com/ben04rogers/computer-auction",
-    urlLink: "https://techprowl.herokuapp.com",
-  },
-  {
-    title: "Task Manager Console App",
-    description:
-      "Console app that manages tasks in a project. Users can load projects from a file and generate a seqeuence to complete them in, based on each task's dependencies. Users can also find earliest possible commencement time of each task, add new tasks, update tasks, remove tasks, and save the results to a text file.",
-    tags: ["C#"],
-    icons: ["devicon:csharp"],
-    imageUrl: taskManagerImg,
-    githubLink: "https://github.com/ben04rogers/task-manager",
-  },
-  {
-    title: "Family Tree Shortest Path",
-    description:
-      "Python program that implements a breadth-first search algorithm to generate a minimal spanning tree. Problem was to calculate a shortest path from a starting vertex in a graph to each other vertex. The vertices represent people and each person is related to every other person through parent-child relationships. A person can see how they are related to each other person in the tree",
+    "A machine learning project focused on predicting housing prices using models like Linear Regression, Ridge, Lasso, Decision Tree, and Random Forest. Model performance was evaluated using R², RMSE, and MAE, with Random Forest delivering the highest accuracy and lowest error. The solution supports better pricing decisions for real estate stakeholders.",
     tags: ["Python"],
-    icons: ["logos:python"],
-    imageUrl: familyTreeImg,
-    githubLink: "https://github.com/ben04rogers/breadth-first-search",
-    demoLink: "https://www.youtube.com/watch?v=VXCZKsqupxA",
+    icons: [
+      "logos:python"
+    ],
+    imageUrl: MachineL,
+    githubLink: "https://github.com/jagrutishinde03/Analysis-of-several-Supervised-Machine-Learning-Algorithms-on-Housing-Dataset",
   },
   {
-    title: "Arduino Binary Game",
+    title: "Profile Explorer Web Application",
     description:
-      "Binary game written in C that runs on an Arduino Uno using Tinkercad. The game aims to help users learn binary by challenging them to input different integers in their binary form within a time limit.",
-    tags: ["C"],
-    icons: ["devicon:c"],
-    imageUrl: binaryGameImg,
-    githubLink: "https://github.com/ben04rogers/binary-game-microcontroller",
-    demoLink: "https://www.youtube.com/watch?v=A6n6XDk4Unw&feature=youtu.be",
+    "This is a React-based web application that allows users to browse and interact with dynamic user profiles. It includes search and filter functionality, detailed profile views, and Google Maps integration for location-based visualization. Admins can manage profiles through an intuitive interface. The app is fully responsive across devices.",
+    tags: ["React", "Javascript", "Bootstrap"],
+    icons: ["logos:react", "logos:javascript","logos:bootstrap"],
+    imageUrl: profile,
+    githubLink: "https://github.com/jagrutishinde03/profile-explorer-webapp",
+  },
+  {
+    title: "Dockerized User Management System",
+    description:
+    "A web application built with Flask and Docker for managing user accounts efficiently. It features secure login, session handling, and admin tools for user CRUD operations with real-time flash messages. Docker containerization ensures smooth deployment across various environments. The project showcases authentication and deployment skills.",
+    tags: ["Python", "Flask", "Bootstrap", "Docker","AWS"],
+    icons: ["logos:python", "logos:bootstrap", "logos:docker","logos:aws"],
+    imageUrl: user,
+    githubLink: "https://github.com/jagrutishinde03/Flask-UserManagement-with-Docker",
+    
   },
 ] as const;
 
 export const skillsData = [
-  {
-    name: "TypeScript",
-    icon: "logos:typescript-icon",
-  },
-  {
-    name: "PHP",
-    icon: "logos:php",
-  },
-  {
-    name: "Laravel",
-    icon: "logos:laravel",
-  },
-  {
-    name: "React",
-    icon: "logos:react",
-  },
-  {
-    name: "GraphQL",
-    icon: "logos:graphql",
-  },
-  {
-    name: "Node.js",
-    icon: "logos:nodejs-icon",
-  },
-  {
-    name: "Symfony",
-    icon: "logos:symfony",
-  },
-  {
-    name: "Python",
-    icon: "logos:python",
-  },
   {
     name: "HTML",
     icon: "vscode-icons:file-type-html",
@@ -215,24 +117,20 @@ export const skillsData = [
     icon: "vscode-icons:file-type-css",
   },
   {
-    name: "SCSS",
-    icon: "logos:sass",
+    name: "React",
+    icon: "logos:react",
   },
   {
-    name: "Git",
-    icon: "logos:git-icon",
+    name: "Vue.js",
+    icon: "logos:vue",
   },
   {
-    name: "MySQL",
-    icon: "logos:mysql",
+    name: "C++",
+    icon: "vscode-icons:file-type-cpp3",
   },
   {
-    name: "PostgreSQL",
-    icon: "logos:postgresql",
-  },
-  {
-    name: "Linux",
-    icon: "flat-color-icons:linux",
+    name: "Java",
+    icon: "logos:java",
   },
   {
     name: "AWS",
@@ -243,7 +141,19 @@ export const skillsData = [
     icon: "logos:docker-icon",
   },
   {
-    name: "Jenkins",
-    icon: "devicon:jenkins",
+    name: "MySQL",
+    icon: "logos:mysql",
+  },
+  {
+    name: "Linux",
+    icon: "flat-color-icons:linux",
+  },
+  {
+    name: "Git",
+    icon: "logos:git-icon",
+  },
+  {
+    name: "GitHub",
+    icon: "akar-icons:github-fill",
   },
 ] as const;

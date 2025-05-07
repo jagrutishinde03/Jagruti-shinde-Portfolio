@@ -5,6 +5,7 @@ import Intro from "@/components/intro";
 import Projects from "@/components/projects";
 import SectionDivider from "@/components/section-divider";
 import Skills from "@/components/skills";
+import Certifications from "@/components/certifications";
 
 export default function Home() {
   return (
@@ -12,10 +13,11 @@ export default function Home() {
       <Intro />
       <div className="flex flex-col items-center px-4">
         <SectionDivider />
-        <Projects />
-        <Skills />
-        <Experience />
         <Education />
+        <Skills />
+        <Projects />
+        <Certifications />
+        <Experience />
         <Contact />
       </div>
     </main>
